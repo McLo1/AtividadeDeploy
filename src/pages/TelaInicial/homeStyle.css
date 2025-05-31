@@ -1,0 +1,95 @@
+:root {
+    --color-primary: #F97316; /* Laranja principal */
+    --color-background: #F8F9FA; /* Um cinza bem claro para o fundo */
+    --color-text-dark: #333333; /* Cor de texto principal */
+    --color-text-light: #777777; /* Cor de texto secundária */
+    --font-sans: 'Helvetica Neue', Arial, sans-serif;
+    
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --rounded-xl: 0.75rem;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    display: flex; /* Transforma o body em um container flex */
+    justify-content: center; /* Centraliza os itens filhos (o .app-container-minimalist) horizontalmente */
+    align-items: center; /* Centraliza os itens filhos verticalmente */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da viewport */
+    padding: 1rem;
+  }
+
+  .app-container-minimalist {
+    width: 100%;
+    max-width: 500px; /* Largura máxima para a tela inicial */
+    text-align: center; /* Centraliza o conteúdo de texto e elementos inline/inline-block dentro deste container */
+  }
+
+  .home-screen-minimalist {
+    padding: 2.5rem 2rem; /* Mais padding para um visual espaçado */
+    background-color: #FFFFFF; /* Fundo branco para o card */
+    border-radius: var(--rounded-xl);
+    box-shadow: var(--shadow-lg);
+    animation: fadeInMinimalist 0.8s ease-out;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-icon-minimalist {
+    width: 5rem; /* Tamanho do ícone */
+    height: 5rem;
+    color: var(--color-primary);
+    margin: 0 auto 1.5rem auto; /* 'margin: 0 auto;' é fundamental para centralizar elementos de bloco com largura definida */
+  }
+
+  .title-minimalist {
+    font-size: 2rem; /* Tamanho do título */
+    font-weight: 600; /* Peso da fonte */
+    color: var(--color-text-dark);
+    margin-bottom: 0.75rem;
+    transform: translateY(-100px);
+  }
+
+  .subtitle-minimalist {
+    font-size: 1.1rem; /* Tamanho do subtítulo */
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+    transform: translateY(-100px);
+  }
+
+  .entry-button-minimalist {
+    display: inline-block; 
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem; /* Cantos arredondados para o botão */
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 12px;
+    transform: translateY(-70px);
+}
+
+  .entry-button-minimalist:hover {
+    background-color: #E06814; /* Um laranja um pouco mais escuro no hover */
+  }
+
+  .logoSoftware{
+    transform: translateY(10px); /* Esta linha parece ser para um ajuste específico e pode mover a logo para fora do centro visual */
+  }
+
+  @keyframes fadeInMinimalist {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
