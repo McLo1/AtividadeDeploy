@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
-import Homepage from "./pages/TelaInicial/homepage";
+import HomePage from "./pages/TelaInicial/homepage";
 import CardapioPage from "./pages/TelaCardápio/CardapioPage";
 import CadastroPratosPage from "./pages/TelaCadastroPratos/TelaCadastroPratos";
 
@@ -10,7 +10,7 @@ function App() {
     
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Homepage/>} />
+        <Route path="/" element={<HomePage/>} />
         <Route path="/cardapio" element={<CardapioPage/>} />
         <Route path="/cadastrarPrato" element={<CadastroPratosPage/>} />
       </Routes>

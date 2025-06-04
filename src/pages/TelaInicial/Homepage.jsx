@@ -31,7 +31,7 @@ const HomeScreenMinimalist = () => {
 };
 
 // Componente Principal da Aplicação Minimalista
-const Homepage = () => {
+const HomePage = () => {
   return (
     <>
       <div className="app-container-minimalist">
@@ -41,4 +41,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;
