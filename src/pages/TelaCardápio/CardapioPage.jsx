@@ -18,7 +18,7 @@ const Cardapio = () => {
 
   // Função para buscar os pratos
   useEffect(() => {
-    axios.get('https://atividadedeploy-1b4f.onrender.com') // Ajuste conforme sua API
+    axios.get('https://atividadedeploy-1.onrender.com/cardapio') // Ajuste conforme sua API
       .then(response => {
         setPratos(response.data);
       })
