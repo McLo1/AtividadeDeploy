@@ -32,7 +32,7 @@ const CadastrarPrato = () => {
     try {
       console.log('Enviando dados para o backend:', formData);
 
-      const response = await axios.post('https://atividadedeploy-1b4f.onrender.com/prato', formData);
+      const response = await axios.post('https://atividadedeploy-1b4f.onrender.com/Prato', formData);
 
       alert('Prato cadastrado com sucesso!');
       navigate('/');
