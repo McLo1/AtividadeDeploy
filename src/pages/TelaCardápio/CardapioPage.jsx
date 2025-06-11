@@ -18,7 +18,7 @@ const Cardapio = () => {
 
   // Função para buscar os pratos
   useEffect(() => {
-    axios.get('https://atividadedeploy-1.onrender.com/Prato') // Ajuste conforme sua API
+    axios.get('https://atividadedeploy-1b4f.onrender.com/Prato') // Ajuste conforme sua API
       .then(response => {
         setPratos(response.data);
       })
@@ -29,7 +29,7 @@ const Cardapio = () => {
 
   // Função para deletar prato
   const deletarPrato = (idPrato) => {
-    axios.delete(`https://atividadedeploy-1b4f.onrender.com/${idPrato}`)
+    axios.delete(`https://atividadedeploy-1b4f.onrender.com/Prato/${idPrato}`)
       .then(() => {
         // Atualiza a lista de pratos após a exclusão
         setPratos(pratos.filter(prato => prato.id !== idPrato));
