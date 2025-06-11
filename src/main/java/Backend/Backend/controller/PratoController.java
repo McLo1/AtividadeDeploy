@@ -20,7 +20,7 @@ public class PratoController {
         this.pratoService = pratoService;
     }
 
-    @GetMapping("/cardapio")
+    @GetMapping
     public List<Prato> listartodos() {
         return pratoService.listarTodos();
     }
